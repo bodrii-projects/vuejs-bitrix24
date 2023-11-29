@@ -1,0 +1,61 @@
+{
+  "name": "ellaraTask",
+  "version": "1.2.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js",
+    "serve": "cd  serve",
+    "build": "vue-cli-service build --no-clean",
+    "top": "vue-cli-service build --no-clean    ``--watch --mode development",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "moment": "^2.15.2",
+    "v-mask": "^2.3.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^17.2.2",
+    "vue-plugin-load-script": "^1.3.2",
+    "vue-router": "^3.2.0",
+    "vuetify": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "@parcel/transformer-vue": "2.0.0-rc.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "express": "^4.17.1",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.2",
+    "vue-html-to-paper": "^1.4.4",
+    "vue-router": "^3.2.0",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

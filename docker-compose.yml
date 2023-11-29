@@ -1,0 +1,24 @@
+services:
+  nodejs:
+    build: .
+#    command: yarn build&watch && yarn start &
+#    command: yarn build&watch
+#    command: node server.js
+#    command: top
+#    command: docker-entrypoint.sh
+    #    image: nodejs:v02
+    working_dir: /app
+    container_name: njs
+    networks:
+      - netjs
+#    restart: unless-stopped
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    volumes:
+#      - ./:/app/project
+#      - ./project:/app/project
+      - ./src:/app/src
+      - ./dist:/app/dist
+networks:
+  netjs:

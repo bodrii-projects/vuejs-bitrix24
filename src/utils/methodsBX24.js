@@ -24,7 +24,6 @@ export const bx24methods = {
             })
         },
 
-
         async callMethod(methodName, params) {
             return new Promise(function (resolve, reject) {
                 let result = [];
@@ -106,8 +105,6 @@ export const bx24methods = {
             })
         }
     },
-
-
 };
 
 function tert(request) {
@@ -122,8 +119,6 @@ function tert(request) {
                 resolve(reslt);
             },
             true);
-
-
     })
 }
 

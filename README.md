@@ -16,26 +16,12 @@ docker images
 ```
 REPOSITORY         TAG       IMAGE ID       CREATED              SIZE
 vue                latest    788bc6a6420b   About a minute ago   931MB
-terra-web_server   latest    c30c974cdd3c   20 hours ago         222MB
-terra-php          latest    fcb1b3e3e36b   20 hours ago         429MB
-terra-db           latest    9eba7414c7ae   20 hours ago         1.34GB
-<none>             <none>    99b5f9d090d1   3 days ago           917MB
-alpine             latest    8ca4688f4f35   2 months ago         7.33MB
-dockette/adminer   full      f5e4e2bf25a7   23 months ago        56MB
 ```
 После того как образ создан, можно работать с контейнером.
 Нам нужно будет его запускать и когда закончиться работа, останавливать.
 Запуск контейнера
 ```
-docker run \
---name vue_app \
---rm \
---detach \
--p 3000:3000 \
--p 3001:3001 \
--v ${PWD}/dist:/app/dist \
--v ${PWD}/src:/app/src \
-vue
+docker run --name vue_app --rm --detach -p 3000:3000 -p 3001:3001 -v ${PWD}/dist:/app/dist -v ${PWD}/src:/app/src vue
 ```
 После запуска контейнера можно проверить список запущеных контейнеров командой 
 ```

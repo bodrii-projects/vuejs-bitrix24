@@ -51,7 +51,7 @@ docker exec vue_app npm run <название скрипта>
 При этом скрипт **start** запускать не надо, он уже запущен  
 Так для hot-reload достаточно запустить команду
 ```
-docker exec vue_app npm run top
+docker exec vue_app npm run "build&watch"
 ```
 а для сборки проекта
 ```

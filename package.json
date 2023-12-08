@@ -3,10 +3,10 @@
   "version": "1.2.1",
   "private": true,
   "scripts": {
-    "start": "node ./server.js",
-    "serve": "cd  serve",
-    "build": "vue-cli-service build --no-clean",
-    "top": "vue-cli-service build --no-clean    ``--watch --mode development",
+    "start": "node server.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build&watch": "vue-cli-service build --no-clean --watch --mode development",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

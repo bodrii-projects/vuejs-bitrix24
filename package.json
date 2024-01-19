@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --no-clean",
     "build&watch": "vue-cli-service build --no-clean --watch --mode development",
     "lint": "vue-cli-service lint"
   },

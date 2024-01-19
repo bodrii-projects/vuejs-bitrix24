@@ -21,12 +21,12 @@ vue                latest    788bc6a6420b   About a minute ago   931MB
 Нам нужно будет его запускать и когда закончиться работа, останавливать.  
 Запуск контейнера
 ```
-docker run --name vue_app --rm --detach -p 3000:3000 -p 3001:3001 -v ${PWD}/dist:/app/dist -v ${PWD}/src:/app/src vue
+docker run --name vue_app --rm --detach -p 3000:3000 -p 3001:3001 -v "${PWD}/dist:/app/dist" -v "${PWD}/src:/app/src" vue
 ```
 После того как работа была завершена, можно остановить контейнер  
 Остановка контейнера
 ```
-docker run vue_app
+docker stop vue_app
 ```
 
 После запуска контейнера можно проверить список запущеных контейнеров командой 
@@ -53,7 +53,11 @@ docker exec vue_app npm run <название скрипта>
 ```
 docker exec vue_app npm run "build&watch"
 ```
-а для сборки проекта
+Для сборки проекта
 ```
 docker exec vue_app npm run build
+```
+Можно добавить NPM пакет
+```
+docker exec vue_app npm i @craydel/craydel-alert
 ```
